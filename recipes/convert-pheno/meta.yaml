@@ -1,0 +1,17 @@
+requirements:
+  build:
+    - make
+    - {{ compiler('c') }}
+
+  host:
+    - perl
+    - perl-extutils-makemaker
+
+  run:
+    - perl
+
+about:
+  home: http://metacpan.org/pod/ConvertPheno
+  license: unknown
+  summary: 'Perl interface to the C Clustering Library'
+
