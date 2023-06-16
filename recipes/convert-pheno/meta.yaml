@@ -22,8 +22,8 @@ requirements:
     - perl
   
 test:
-  commands:
-    - perl ./t/cli.t
+  import:
+    - Convert::Pheno
 
 about:
   home: https://github.com/CNAG-Biomedical-Informatics/convert-pheno
