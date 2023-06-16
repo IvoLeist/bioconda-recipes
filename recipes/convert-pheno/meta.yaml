@@ -1,17 +1,33 @@
-requirements:
-  build:
-    - make
-    - {{ compiler('c') }}
+package:
+  name: convert-pheno
+  version: "0.0.1"
 
+source:
+  path: ~/projects/bioinfo/cnag/repos/Convert-Pheno/convert-pheno/convert-pheno.tar.gz
+  sha256: db113eff07ff9d3e4eafbc3628d0729307f0bb1c5ccbad2fb339b72e880083ea
+
+build:
+  number: 0
+  noarch: generic
+  
+requirements:
   host:
     - perl
-    - perl-extutils-makemaker
+    - cpanminus
 
   run:
     - perl
+    - cpanminus
+
+install:
+  - cpanm --installdeps .
+  
+test:
+  commands:
+    - prove -l
 
 about:
-  home: http://metacpan.org/pod/ConvertPheno
-  license: unknown
-  summary: 'Perl interface to the C Clustering Library'
+  home: https://github.com/CNAG-Biomedical-Informatics/convert-pheno
+  license: Artistic License 2.0
+  summary: 'A software toolkit for the interconversion of standard data models for phenotypic data'
 
