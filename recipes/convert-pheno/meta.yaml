@@ -17,10 +17,12 @@ requirements:
   host:
     - perl
     - perl-app-cpanminus
+    - perl-perlio-gzip
     - zlib
 
   run:
     - perl
+    - zlib
   
 test:
   import:
