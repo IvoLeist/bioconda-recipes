@@ -4,7 +4,7 @@ package:
 
 source:
   url: https://github.com/CNAG-Biomedical-Informatics/convert-pheno-ui/raw/main/convert-pheno.tar.gz
-  sha256: 616839672aa1e609693d1f0418bbf45e3d6b18a8a62d0c65e7b6971615784cdb
+  sha256: d886b824ac6a27876b3b635c7ab76f04fb370626f2ff6de19b20aaaaa273f9da
 
 build:
   number: 0
@@ -14,15 +14,15 @@ requirements:
   build: 
     - {{ compiler('c') }}
     - make
+    - cython
   host:
     - perl
     - perl-app-cpanminus
     - perl-perlio-gzip
-    - zlib
+    - perl-io-socket-ssl
 
   run:
     - perl
-    - zlib
   
 test:
   import:
