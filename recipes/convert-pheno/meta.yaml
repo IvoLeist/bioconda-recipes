@@ -1,40 +1,40 @@
-package:
-  name: convertpheno
-  version: "0.0.1"
+# package:
+#   name: convertpheno
+#   version: "0.0.1"
 
-source:
-  url: https://github.com/CNAG-Biomedical-Informatics/convert-pheno-ui/raw/main/convertpheno.tar.gz
-  sha256: d886b824ac6a27876b3b635c7ab76f04fb370626f2ff6de19b20aaaaa273f9da
+# source:
+#   url: https://github.com/CNAG-Biomedical-Informatics/convert-pheno-ui/raw/main/convertpheno.tar.gz
+#   sha256: d886b824ac6a27876b3b635c7ab76f04fb370626f2ff6de19b20aaaaa273f9da
 
-build:
-  number: 0
-  noarch: generic
-  entry_points:
-    - convertpheno=convertpheno.ex.__main__:main
+# build:
+#   number: 0
+#   noarch: generic
+#   entry_points:
+#     - convertpheno=convertpheno.ex.__main__:main
   
-requirements:
-  build: 
-    - {{ compiler('c') }}
-    - make
-    - cython
-  host:
-    - perl
-    - perl-app-cpanminus
-    - perl-perlio-gzip
-    - perl-io-socket-ssl
+# requirements:
+#   build: 
+#     - {{ compiler('c') }}
+#     - make
+#     - cython
+#   host:
+#     - perl
+#     - perl-app-cpanminus
+#     - perl-perlio-gzip
+#     - perl-io-socket-ssl
 
-  run:
-    - python
-    - perl
+#   run:
+#     - python
+#     - perl
   
-test:
-  imports:
-    - Convert::Pheno
-    - convertpheno
+# test:
+#   imports:
+#     - Convert::Pheno
+#     - convertpheno
 
-about:
-  home: https://github.com/CNAG-Biomedical-Informatics/convert-pheno
-  license: Artistic License 2.0
-  summary: A software toolkit for the interconversion of standard data models for phenotypic data
-  doc_url: https://cnag-biomedical-informatics.github.io/convert-pheno
+# about:
+#   home: https://github.com/CNAG-Biomedical-Informatics/convert-pheno
+#   license: Artistic License 2.0
+#   summary: A software toolkit for the interconversion of standard data models for phenotypic data
+#   doc_url: https://cnag-biomedical-informatics.github.io/convert-pheno
 

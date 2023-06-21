@@ -1,0 +1,36 @@
+package:
+  name: perl-convert-pheno
+  version: "0.0.1"
+
+source:
+  url: https://github.com/CNAG-Biomedical-Informatics/convert-pheno-ui/raw/main/convertpheno.tar.gz
+  sha256: d886b824ac6a27876b3b635c7ab76f04fb370626f2ff6de19b20aaaaa273f9da
+
+build:
+  number: 0
+  noarch: generic
+  
+requirements:
+  build: 
+    - {{ compiler('c') }}
+    - make
+    - cython
+  host:
+    - perl
+    - perl-app-cpanminus
+    - perl-perlio-gzip
+    - perl-io-socket-ssl
+
+  run:
+    - perl
+  
+test:
+  imports:
+    - Convert::Pheno
+
+about:
+  home: https://github.com/CNAG-Biomedical-Informatics/convert-pheno
+  license: Artistic License 2.0
+  summary: A software toolkit for the interconversion of standard data models for phenotypic data
+  doc_url: https://cnag-biomedical-informatics.github.io/convert-pheno
+
