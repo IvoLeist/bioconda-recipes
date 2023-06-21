@@ -1,14 +1,16 @@
 package:
-  name: convert-pheno
+  name: convertpheno
   version: "0.0.1"
 
 source:
-  url: https://github.com/CNAG-Biomedical-Informatics/convert-pheno-ui/raw/main/convert-pheno.tar.gz
+  url: https://github.com/CNAG-Biomedical-Informatics/convert-pheno-ui/raw/main/convertpheno.tar.gz
   sha256: d886b824ac6a27876b3b635c7ab76f04fb370626f2ff6de19b20aaaaa273f9da
 
 build:
   number: 0
   noarch: generic
+  entry_points:
+    - convertpheno=convertpheno.ex.__main__:main
   
 requirements:
   build: 
@@ -22,6 +24,7 @@ requirements:
     - perl-io-socket-ssl
 
   run:
+    - python
     - perl
   
 test:
