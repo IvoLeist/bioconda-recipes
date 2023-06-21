@@ -14,7 +14,6 @@ requirements:
   build: 
     - {{ compiler('c') }}
     - make
-    - cython
   host:
     - perl
     - perl-app-cpanminus
@@ -25,8 +24,11 @@ requirements:
     - perl
   
 test:
+  # Perl 'use' tests
+
   imports:
     - Convert::Pheno
+    # Can't locate Convert/Pheno.pm in @INC
 
 about:
   home: https://github.com/CNAG-Biomedical-Informatics/convert-pheno
