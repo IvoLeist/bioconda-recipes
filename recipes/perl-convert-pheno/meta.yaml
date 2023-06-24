@@ -14,7 +14,7 @@ requirements:
   build: 
     - {{ compiler('c') }}
     - make
-    - zlib-devel
+    - zlib
   host:
     - perl
     - perl-app-cpanminus
