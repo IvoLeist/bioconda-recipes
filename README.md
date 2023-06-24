@@ -1,5 +1,10 @@
 # suggestion by ChatGPT how to build a python conda package for convert-pheno
 
+https://stackoverflow.com/questions/65724310/unable-to-install-perl-modules-via-cpanm-in-conda-environments
+Thanks you very match @Håkon! This is the clearest and most comprehensive answer I got from the web. Finally, I was able to install most of the perl modules via cpanm, into a conda environment. I also found that if your module requires one or more headers from any C library (ie: PerlIO::gzip), you can install that library with conda (conda install -c anaconda zlib) and add $CONDA_PREFIX/include to the ccflags var from Config_heavy.pl -I/igatech/rd/dev/miniconda3/envs/test-perl/include – 
+vid1998
+ Jan 15, 2021 at 17:28
+
 Link to chat:
 https://chat.openai.com/share/9f2266d6-78df-4fb5-a1b6-82d9564bd356
 
