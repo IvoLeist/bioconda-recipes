@@ -16,7 +16,7 @@ requirements:
   #   - make
   host:
     - perl
-    # - perl-app-cpanminus
+    - perl-app-cpanminus
     # - perl-perlio-gzip
     # - perl-io-socket-ssl
 
