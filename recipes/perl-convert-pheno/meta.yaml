@@ -11,9 +11,9 @@ build:
   noarch: generic
   
 requirements:
-  # build: 
+  build: 
+    - make
   #   - {{ compiler('c') }}
-  #   - make
   host:
     - perl
     - perl-app-cpanminus
