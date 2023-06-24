@@ -3,8 +3,8 @@ package:
   version: "0.0.1"
 
 source:
-  url: https://github.com/CNAG-Biomedical-Informatics/convert-pheno-ui/raw/main/convertpheno.tar.gz
-  sha256: d886b824ac6a27876b3b635c7ab76f04fb370626f2ff6de19b20aaaaa273f9da
+  url: https://cpan.metacpan.org/authors/id/M/MR/MRUEDA/Convert-Pheno-0.04.tar.gz
+  sha256: bb33388b29b8f371776bf850e84103a36e4cb8bf78cec5f0ecf666b8504f5f19
 
 build:
   number: 0
@@ -16,16 +16,15 @@ requirements:
     - make
   host:
     - perl
-    - perl-app-cpanminus
-    - perl-perlio-gzip
-    - perl-io-socket-ssl
+    # - perl-app-cpanminus
+    # - perl-perlio-gzip
+    # - perl-io-socket-ssl
 
   run:
     - perl
   
 test:
   # Perl 'use' tests
-
   imports:
     - Convert::Pheno
     # Can't locate Convert/Pheno.pm in @INC
