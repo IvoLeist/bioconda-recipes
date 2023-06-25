@@ -14,15 +14,16 @@ requirements:
   build: 
     - {{ compiler('c') }}
     - make
-    - zlib
   host:
     - perl
     - perl-app-cpanminus
+    - zlib
     # - perl-perlio-gzip
     # - perl-io-socket-ssl
 
   run:
     - perl
+    - zlib
   
 test:
   # Perl 'use' tests
