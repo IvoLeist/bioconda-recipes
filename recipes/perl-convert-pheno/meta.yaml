@@ -20,6 +20,12 @@ requirements:
     - zlib
     - perl-perlio-gzip
     - perl-io-socket-ssl
+    - perl-json-xs
+    - perl-sort-naturally
+    - perl-test-exception
+    - perl-dbi
+    - perl-dbd-sqlite
+    - perl-moo
 
   run:
     - perl
