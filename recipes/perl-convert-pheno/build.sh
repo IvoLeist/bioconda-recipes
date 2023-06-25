@@ -2,8 +2,8 @@
 # HOME=/tmp cpanm --installdeps .
 export LD_LIBRARY_PATH="${PREFIX}/lib"
 export C_INCLUDE_PATH="${PREFIX}/include"
-HOME=/tmp cpanm PerlIO::gzip
-# HOME=/tmp cpanm  Convert::Pheno
+# HOME=/tmp cpanm PerlIO::gzip
+HOME=/tmp cpanm Convert::Pheno
 
 # perl Makefile.PL INSTALLDIRS=site \
 #     INC="-I${PREFIX}/include" LIBS="-L${PREFIX}/lib -lz"

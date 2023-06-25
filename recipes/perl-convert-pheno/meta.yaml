@@ -18,7 +18,7 @@ requirements:
     - perl
     - perl-app-cpanminus
     - zlib
-    - perl-perlio-gzip
+    # - perl-perlio-gzip
     # - perl-io-socket-ssl
 
   run:
