@@ -4,7 +4,7 @@ export LD_LIBRARY_PATH="${PREFIX}/lib"
 # export C_INCLUDE_PATH="${PREFIX}/include"
 find "${PREFIX}/include" -name "timesize.h"
 export C_INCLUDE_PATH=${C_INCLUDE_PATH}:"${PREFIX}/include"
-export C_INCLUDE_PATH=${C_INCLUDE_PATH}:/usr/include/x86_64-linux-gnu/bits
+# export C_INCLUDE_PATH=${C_INCLUDE_PATH}:/usr/include/x86_64-linux-gnu/bits
 # HOME=/tmp cpanm PerlIO::gzip
 HOME=/tmp cpanm Convert::Pheno
 
