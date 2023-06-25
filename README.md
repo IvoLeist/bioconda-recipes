@@ -18,6 +18,7 @@ The meta.yaml file provides metadata about the package and its dependencies,
 and the build.sh script contains the commands to build the module.
 
 conda build perl-convert-pheno
+conda activate biocondaPy37
 bioconda-utils build --docker --mulled-test --git-range master --packages perl-convert-pheno
 
 Include the CPAN module as a dependency in your Python conda package
