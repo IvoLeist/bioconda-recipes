@@ -9,8 +9,14 @@
 # HOME=/tmp cpanm PerlIO::gzip
 
 # Add the conda lib paths to PERL5LIB
-echo CONDA_PREFIX: $CONDA_PREFIX
-export PERL5LIB="$CONDA_PREFIX/lib:$CONDA_PREFIX/lib/perl5:$CONDA_PREFIX/lib/perl5/site_perl:$PERL5LIB"
+
+# perl version
+perl_version=$(perl -e 'print $^V');
+perl_version=${perl_version:1}
+echo "perl_version: $perl_version"
+
+echo "CONDA_PREFIX: $CONDA_PREFIX"
+export PERL5LIB="$CONDA_PREFIX/lib:$CONDA_PREFIX/lib/perl5:$CONDA_PREFIX/lib/perl5/$perl_version/site_perl:$PERL5LIB"
 echo "PERL5LIB: $PERL5LIB"
 
 echo "say for @INC"
