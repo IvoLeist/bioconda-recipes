@@ -9,10 +9,13 @@
 # HOME=/tmp cpanm PerlIO::gzip
 
 # install dependencies not found in conda channels
+perl -E 'say for @INC'
+
 HOME=/tmp cpanm File::ShareDir::ProjectDistDir
 HOME=/tmp cpanm JSON::Validator
 HOME=/tmp cpanm Moo
 HOME=/tmp cpanm Path::Tiny
+HOME=/tmp cpanm Sort::Naturally
 HOME=/tmp cpanm Test::Deep
 HOME=/tmp cpanm Test::Warn
 HOME=/tmp cpanm Text::CSV_XS
@@ -23,6 +26,39 @@ HOME=/tmp cpanm YAML::XS
 
 perl Makefile.PL INSTALLDIRS=site
 make
+
+# suggestion by chatGPT to debug tests
+# Run tests one by one and capture error logs
+TEST_LOGS_DIR="test_logs"
+mkdir -p "$TEST_LOGS_DIR"
+
+test_modules=("t/args.t" "t/cli.t")
+
+for test_module in "${test_modules[@]}"; do
+  test_name=$(basename "$test_module" ".t")
+  test_log_file="$TEST_LOGS_DIR/$test_name.log"
+  
+  echo "Running test: $test_name"
+  make test TEST_FILES="$test_module" 2> "$test_log_file"
+  
+  if [ $? -eq 0 ]; then
+    echo "Test '$test_name' passed."
+  else
+    echo "Test '$test_name' failed. Error log saved to: $test_log_file"
+  fi
+done
+
+make install
+
+
+
+
+
+
+
+
+
+
 # testing seem to fail (see below)
 # make test
 make install
