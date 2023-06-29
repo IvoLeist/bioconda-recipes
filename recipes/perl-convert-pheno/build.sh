@@ -35,6 +35,9 @@ echo "say for @INC - END"
 # $PREFIX/lib/perl5/5.32/vendor_perl
 # $PREFIX/lib/perl5/5.32/core_perl
 
+# another finding it looks like that perl is looking for the module
+# in the following paths _test_env but the module is not there but in _h_env
+
 echo "get all perl modules in @INC"
 INC_PATHS=$(perl -e 'print join(" ", @INC)')
 

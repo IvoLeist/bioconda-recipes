@@ -29,6 +29,11 @@ requirements:
 
   run:
     - perl
+    - perl-dbi
+    - perl-dbd-sqlite
+    - perl-json-xs
+    - perl-perlio-gzip
+    - perl-sort-naturally
   
 test:
   # Perl 'use' tests
