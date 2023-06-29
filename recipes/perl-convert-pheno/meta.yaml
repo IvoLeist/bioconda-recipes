@@ -1,4 +1,4 @@
-{% set version = "0.0.9" %}
+{% set version = "0.09" %}
 
 package:
   name: perl-convert-pheno
@@ -25,11 +25,9 @@ requirements:
     - perl-test-exception
     - perl-dbi
     - perl-dbd-sqlite
-    - zlib
 
   run:
     - perl
-    - zlib
   
 test:
   # Perl 'use' tests
