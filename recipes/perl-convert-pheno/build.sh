@@ -8,20 +8,20 @@
 # export C_INCLUDE_PATH=${C_INCLUDE_PATH}:/usr/include/x86_64-linux-gnu
 # HOME=/tmp cpanm PerlIO::gzip
 
-echo "say for @INC"
-perl -E 'say for @INC'
-echo "say for @INC - END"
+# echo "say for @INC"
+# perl -E 'say for @INC'
+# echo "say for @INC - END"
 
-echo "get all perl modules in @INC"
-INC_PATHS=$(perl -e 'print join(" ", @INC)')
+# echo "get all perl modules in @INC"
+# INC_PATHS=$(perl -e 'print join(" ", @INC)')
 
-for path in $INC_PATHS; do
-    # Ensure path exists and is a directory
-    if [[ -d "$path" ]]; then
-        find "$path" -type f -name "*.pm"
-    fi
-done
-echo "get all perl modules in @INC - END"
+# for path in $INC_PATHS; do
+#     # Ensure path exists and is a directory
+#     if [[ -d "$path" ]]; then
+#         find "$path" -type f -name "*.pm"
+#     fi
+# done
+# echo "get all perl modules in @INC - END"
 
 # install dependencies not found in conda channels
 install_deps() {
@@ -39,7 +39,6 @@ install_deps() {
         "XML::Fast"
         "YAML::XS"
     )
-
     for dep in "${deps[@]}"; do
         HOME=/tmp cpanm "$dep" || {
             echo "Failed to install perl module $dep"
