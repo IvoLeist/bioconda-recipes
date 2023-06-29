@@ -24,7 +24,7 @@ requirements:
     - perl-file-sharedir-install
     - perl-json-xs
     - perl-perlio-gzip
-    - perl-sort-naturally
+    # - perl-sort-naturally
     - perl-test-exception
 
   run:

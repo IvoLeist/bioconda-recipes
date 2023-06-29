@@ -55,6 +55,7 @@ install_deps() {
         "JSON::Validator"
         "Moo"
         "Path::Tiny"
+        "Sort::Naturally"
         "Test::Deep"
         "Test::Warn"
         "Text::CSV_XS"
