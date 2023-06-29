@@ -18,13 +18,13 @@ requirements:
     - make
   host:
     - perl
-    # - perl-app-cpanminus
-    - perl-perlio-gzip
-    - perl-json-xs
-    - perl-sort-naturally
-    - perl-test-exception
+    - perl-app-cpanminus
     - perl-dbi
     - perl-dbd-sqlite
+    - perl-json-xs
+    - perl-perlio-gzip
+    - perl-sort-naturally
+    - perl-test-exception
 
   run:
     - perl
