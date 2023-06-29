@@ -8,20 +8,25 @@
 # export C_INCLUDE_PATH=${C_INCLUDE_PATH}:/usr/include/x86_64-linux-gnu
 # HOME=/tmp cpanm PerlIO::gzip
 
-# echo "say for @INC"
-# perl -E 'say for @INC'
-# echo "say for @INC - END"
+# Add the conda lib paths to PERL5LIB
+echo CONDA_PREFIX: $CONDA_PREFIX
+export PERL5LIB="$CONDA_PREFIX/lib:$CONDA_PREFIX/lib/perl5:$CONDA_PREFIX/lib/perl5/site_perl:$PERL5LIB"
+echo "PERL5LIB: $PERL5LIB"
 
-# echo "get all perl modules in @INC"
-# INC_PATHS=$(perl -e 'print join(" ", @INC)')
+echo "say for @INC"
+perl -E 'say for @INC'
+echo "say for @INC - END"
 
-# for path in $INC_PATHS; do
-#     # Ensure path exists and is a directory
-#     if [[ -d "$path" ]]; then
-#         find "$path" -type f -name "*.pm"
-#     fi
-# done
-# echo "get all perl modules in @INC - END"
+echo "get all perl modules in @INC"
+INC_PATHS=$(perl -e 'print join(" ", @INC)')
+
+for path in $INC_PATHS; do
+    # Ensure path exists and is a directory
+    if [[ -d "$path" ]]; then
+        find "$path" -type f -name "*.pm"
+    fi
+done
+echo "get all perl modules in @INC - END"
 
 # install dependencies not found in conda channels
 install_deps() {
@@ -30,7 +35,6 @@ install_deps() {
         "JSON::Validator"
         "Moo"
         "Path::Tiny"
-        "Sort::Naturally"
         "Test::Deep"
         "Test::Warn"
         "Text::CSV_XS"
