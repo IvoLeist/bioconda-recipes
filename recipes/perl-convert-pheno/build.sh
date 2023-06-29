@@ -8,8 +8,10 @@
 # export C_INCLUDE_PATH=${C_INCLUDE_PATH}:/usr/include/x86_64-linux-gnu
 # HOME=/tmp cpanm PerlIO::gzip
 
-perl Makefile.PL INSTALLDIRS=site \
-    INC="-I${PREFIX}/include" LIBS="-L${PREFIX}/lib -lz"
+perl Makefile.PL INSTALLDIRS=site
+
+# perl Makefile.PL INSTALLDIRS=site \
+#     INC="-I${PREFIX}/include" LIBS="-L${PREFIX}/lib -lz"
 make
 make test
 make install
