@@ -11,18 +11,43 @@
 # install dependencies not found in conda channels
 perl -E 'say for @INC'
 
-HOME=/tmp cpanm File::ShareDir::ProjectDistDir
-HOME=/tmp cpanm JSON::Validator
-HOME=/tmp cpanm Moo
-HOME=/tmp cpanm Path::Tiny
-HOME=/tmp cpanm Sort::Naturally
-HOME=/tmp cpanm Test::Deep
-HOME=/tmp cpanm Test::Warn
-HOME=/tmp cpanm Text::CSV_XS
-HOME=/tmp cpanm Text::Similarity
-HOME=/tmp cpanm Types::Standard
-HOME=/tmp cpanm XML::Fast
-HOME=/tmp cpanm YAML::XS
+install_deps() {
+    deps=(
+        "File::ShareDir::ProjectDistDir"
+        "JSON::Validator"
+        "Moo"
+        "Path::Tiny"
+        "Sort::Naturally"
+        "Test::Deep"
+        "Test::Warn"
+        "Text::CSV_XS"
+        "Text::Similarity"
+        "Types::Standard"
+        "XML::Fast"
+        "YAML::XS"
+    )
+
+    for dep in "${deps[@]}"; do
+        HOME=/tmp cpanm "$dep" || {
+            echo "Failed to install perl module $dep"
+            exit 1
+        }
+    done
+}
+install_deps
+
+# HOME=/tmp cpanm File::ShareDir::ProjectDistDir
+# HOME=/tmp cpanm JSON::Validator
+# HOME=/tmp cpanm Moo
+# HOME=/tmp cpanm Path::Tiny
+# HOME=/tmp cpanm Sort::Naturally
+# HOME=/tmp cpanm Test::Deep
+# HOME=/tmp cpanm Test::Warn
+# HOME=/tmp cpanm Text::CSV_XS
+# HOME=/tmp cpanm Text::Similarity
+# HOME=/tmp cpanm Types::Standard
+# HOME=/tmp cpanm XML::Fast
+# HOME=/tmp cpanm YAML::XS
 
 perl Makefile.PL INSTALLDIRS=site
 make
