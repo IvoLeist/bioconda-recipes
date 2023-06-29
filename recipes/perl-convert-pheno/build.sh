@@ -1,6 +1,6 @@
 #!/bin/bash
 # HOME=/tmp cpanm Convert::Pheno
-HOME=/tmp cpanm --installdeps .
+# HOME=/tmp cpanm --installdeps .
 # export LD_LIBRARY_PATH="${PREFIX}/lib"
 # export C_INCLUDE_PATH="${PREFIX}/include"
 
