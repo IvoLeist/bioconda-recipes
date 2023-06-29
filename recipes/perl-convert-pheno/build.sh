@@ -16,12 +16,19 @@ perl_version=${perl_version:1}
 echo "perl_version: $perl_version"
 
 echo "CONDA_PREFIX: $CONDA_PREFIX"
-export PERL5LIB="$CONDA_PREFIX/lib:$CONDA_PREFIX/lib/perl5:$CONDA_PREFIX/lib/perl5/$perl_version/site_perl:$PERL5LIB"
+export PERL5LIB="$CONDA_PREFIX/lib:$CONDA_PREFIX/lib/perl5:$CONDA_PREFIX/lib/perl5/site_perl:$PERL5LIB"
 echo "PERL5LIB: $PERL5LIB"
 
 echo "say for @INC"
 perl -E 'say for @INC'
 echo "say for @INC - END"
+
+# the lines above have confirmed the via conda installed perl modules are in the INC path
+# but still when trying to install the perl module Convert::Pheno it fails to find them
+# because it is looking only in the follwing paths:
+# $PREFIX/lib/perl5/5.32/site_perl
+# $PREFIX/lib/perl5/5.32/vendor_perl
+# $PREFIX/lib/perl5/5.32/core_perl
 
 echo "get all perl modules in @INC"
 INC_PATHS=$(perl -e 'print join(" ", @INC)')
@@ -33,6 +40,13 @@ for path in $INC_PATHS; do
     fi
 done
 echo "get all perl modules in @INC - END"
+
+# the lines above have confirmed the via conda installed perl modules
+# are there but unfortunately not in the paths including the perl version number
+# but e.g. there:
+# $PREFIX/lib/perl5/site_perl/Sort/Naturally.pm
+# and the path above is not used when trying to install the perl module Convert::Pheno
+
 
 # install dependencies not found in conda channels
 install_deps() {
