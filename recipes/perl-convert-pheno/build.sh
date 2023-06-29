@@ -19,6 +19,11 @@ echo "CONDA_PREFIX: $CONDA_PREFIX"
 export PERL5LIB="$CONDA_PREFIX/lib:$CONDA_PREFIX/lib/perl5:$CONDA_PREFIX/lib/perl5/site_perl:$PERL5LIB"
 echo "PERL5LIB: $PERL5LIB"
 
+# according to ChatGPT-4 the following could help:
+export PERL_LOCAL_LIB_ROOT="$CONDA_PREFIX/lib/perl5/site_perl"
+#  or a symlink
+# ln -s "$PREFIX/lib/perl5/site_perl" "$REFIX/lib/perl5/5.32/site_perl"
+
 echo "say for @INC"
 perl -E 'say for @INC'
 echo "say for @INC - END"
@@ -55,7 +60,7 @@ install_deps() {
         "JSON::Validator"
         "Moo"
         "Path::Tiny"
-        "Sort::Naturally"
+        # "Sort::Naturally"
         "Test::Deep"
         "Test::Warn"
         "Text::CSV_XS"
