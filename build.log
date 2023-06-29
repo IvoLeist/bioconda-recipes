@@ -1,27 +1,31 @@
-21:31:34 BIOCONDA INFO Considering total of 1 recipes (perl-convert-pheno).
-21:31:35 BIOCONDA INFO Constraining to 2 git modified recipes (perl-convert-pheno, convert-pheno).
-21:31:35 BIOCONDA INFO Overlap was 1 recipes (perl-convert-pheno).
-21:31:35 BIOCONDA INFO Processing 1 recipes (perl-convert-pheno).
-21:31:35 BIOCONDA INFO Generating DAG
-21:31:35 BIOCONDA INFO 1 recipes to build and test: 
+21:46:25 BIOCONDA INFO Considering total of 1 recipes (perl-convert-pheno).
+21:46:25 BIOCONDA INFO Constraining to 2 git modified recipes (perl-convert-pheno, convert-pheno).
+21:46:25 BIOCONDA INFO Overlap was 1 recipes (perl-convert-pheno).
+21:46:25 BIOCONDA INFO Processing 1 recipes (perl-convert-pheno).
+21:46:25 BIOCONDA INFO Generating DAG
+21:46:26 BIOCONDA INFO 1 recipes to build and test: 
 perl-convert-pheno
-21:31:35 BIOCONDA INFO Determining expected packages for recipes/perl-convert-pheno
-21:31:35 CONDA_BUILD WARNING Setting build platform. This is only useful when pretending to be on another platform, such as for rendering necessary dependencies on a non-native platform. I trust that you know what you're doing.
+21:46:26 BIOCONDA INFO Determining expected packages for recipes/perl-convert-pheno
+21:46:26 CONDA_BUILD WARNING Setting build platform. This is only useful when pretending to be on another platform, such as for rendering necessary dependencies on a non-native platform. I trust that you know what you're doing.
 Updating build index: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
 
-21:31:35 CONDA_BUILD WARNING No numpy version specified in conda_build_config.yaml.  Falling back to default numpy value of 1.16
+21:46:26 CONDA_BUILD WARNING No numpy version specified in conda_build_config.yaml.  Falling back to default numpy value of 1.16
 Adding in variants from internal_defaults
-21:31:35 CONDA_BUILD INFO Adding in variants from internal_defaults
+21:46:26 CONDA_BUILD INFO Adding in variants from internal_defaults
 Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/conda_build_config.yaml
-21:31:35 CONDA_BUILD INFO Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/conda_build_config.yaml
+21:46:26 CONDA_BUILD INFO Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/conda_build_config.yaml
 Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/bioconda_utils/bioconda_utils-conda_build_config.yaml
-21:31:35 CONDA_BUILD INFO Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/bioconda_utils/bioconda_utils-conda_build_config.yaml
+21:46:26 CONDA_BUILD INFO Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/bioconda_utils/bioconda_utils-conda_build_config.yaml
 Updating build index: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
 
 Adding in variants from argument_variants
-21:31:58 CONDA_BUILD INFO Adding in variants from argument_variants
+21:46:49 CONDA_BUILD INFO Adding in variants from argument_variants
 Attempting to finalize metadata for perl-convert-pheno
-21:31:58 CONDA_BUILD INFO Attempting to finalize metadata for perl-convert-pheno
+21:46:49 CONDA_BUILD INFO Attempting to finalize metadata for perl-convert-pheno
+conda-forge/linux-64                                        Using cache
+conda-forge/noarch                                          Using cache
+bioconda/linux-64                                           Using cache
+bioconda/noarch                                             Using cache
 Reloading output folder: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
 Transaction
 
@@ -69,16 +73,16 @@ Transaction
 
   Updating specs:
 
-   - perl=5.32.1
+   - perl-test-exception
+   - perl-json-xs
+   - perl-sort-naturally
+   - libgcc-ng[version='>=12']
    - perl-app-cpanminus
    - perl-file-sharedir-install
-   - perl-json-xs
-   - perl-perlio-gzip
-   - libgcc-ng[version='>=12']
    - perl-dbd-sqlite
-   - perl-sort-naturally
+   - perl=5.32.1
+   - perl-perlio-gzip
    - perl-dbi
-   - perl-test-exception
 
 
   Package                       Version  Build             Channel                    Size
@@ -125,29 +129,29 @@ Transaction
 
   Updating specs:
 
-   - perl-carp=1.50[build=pl5321hd8ed1ab_0]
-   - _libgcc_mutex=0.1[build=conda_forge]
-   - perl-exporter=5.74[build=pl5321hd8ed1ab_0]
-   - zlib=1.2.13[build=hd590300_5]
-   - perl-dbd-sqlite=1.72[build=pl5321h031d066_1]
    - perl=5.32.1[build=2_h7f98852_perl5]
-   - perl-sort-naturally=1.03[build=pl5321hdfd78af_3]
-   - libzlib=1.2.13[build=hd590300_5]
-   - perl-common-sense=3.75[build=pl5321hd8ed1ab_0]
-   - perl-sub-uplevel=0.2800[build=pl5321h166bdaf_0]
-   - perl-perlio-gzip=0.20[build=pl5321he4a0461_5]
-   - perl-file-sharedir-install=0.13[build=pl5321hdfd78af_1]
-   - perl-types-serialiser=1.01[build=pl5321hdfd78af_0]
    - perl-json-xs=4.03[build=pl5321h4ac6f70_2]
-   - libnsl=2.0.0[build=h7f98852_0]
-   - libgomp=13.1.0[build=he5830b7_0]
-   - libstdcxx-ng=13.1.0[build=hfd8a6a1_0]
-   - perl-dbi=1.643[build=pl5321h166bdaf_0]
+   - zlib=1.2.13[build=hd590300_5]
+   - perl-common-sense=3.75[build=pl5321hd8ed1ab_0]
+   - perl-sort-naturally=1.03[build=pl5321hdfd78af_3]
+   - perl-exporter=5.74[build=pl5321hd8ed1ab_0]
    - libgcc-ng=13.1.0[build=he5830b7_0]
+   - perl-dbi=1.643[build=pl5321h166bdaf_0]
+   - libnsl=2.0.0[build=h7f98852_0]
+   - perl-dbd-sqlite=1.72[build=pl5321h031d066_1]
    - perl-extutils-makemaker=7.70[build=pl5321hd8ed1ab_0]
+   - libstdcxx-ng=13.1.0[build=hfd8a6a1_0]
+   - libgomp=13.1.0[build=he5830b7_0]
    - _openmp_mutex=4.5[build=2_gnu]
-   - perl-test-exception=0.43[build=pl5321hd8ed1ab_0]
    - perl-app-cpanminus=1.7046[build=pl5321hd8ed1ab_0]
+   - perl-types-serialiser=1.01[build=pl5321hdfd78af_0]
+   - _libgcc_mutex=0.1[build=conda_forge]
+   - perl-sub-uplevel=0.2800[build=pl5321h166bdaf_0]
+   - perl-carp=1.50[build=pl5321hd8ed1ab_0]
+   - libzlib=1.2.13[build=hd590300_5]
+   - perl-file-sharedir-install=0.13[build=pl5321hdfd78af_1]
+   - perl-perlio-gzip=0.20[build=pl5321he4a0461_5]
+   - perl-test-exception=0.43[build=pl5321hd8ed1ab_0]
 
 
   Package                       Version  Build             Channel                    Size
@@ -187,186 +191,184 @@ Transaction
 
 ────────────────────────────────────────────────────────────────────────────────────────────
 
-21:33:30 BIOCONDA INFO BUILD START recipes/perl-convert-pheno
+21:48:06 BIOCONDA INFO BUILD START recipes/perl-convert-pheno
 Updating build index: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
 
-21:33:30 BIOCONDA INFO (COMMAND) /home/ivo/mambaforge/envs/biocondaPy37/bin/conda mambabuild --override-channels --no-anaconda-upload -c conda-forge -c bioconda -c defaults -e /home/ivo/mambaforge/envs/biocondaPy37/conda_build_config.yaml -e /home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/bioconda_utils/bioconda_utils-conda_build_config.yaml recipes/perl-convert-pheno/meta.yaml
-21:33:31 BIOCONDA INFO (ERR) /home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/conda_build/cli/main_build.py:390: UserWarning: RECIPE_PATH received is a file. File: recipes/perl-convert-pheno/meta.yaml
-21:33:31 BIOCONDA INFO (ERR) It should be a path to a folder.
-21:33:31 BIOCONDA INFO (ERR) Forcing conda-build to use the recipe file.
-21:33:31 BIOCONDA INFO (ERR)   UserWarning
-21:33:31 BIOCONDA INFO (ERR) No numpy version specified in conda_build_config.yaml.  Falling back to default numpy value of 1.16
-21:33:31 BIOCONDA INFO (ERR) WARNING:conda_build.metadata:No numpy version specified in conda_build_config.yaml.  Falling back to default numpy value of 1.16
-21:33:31 BIOCONDA INFO (OUT) Updating build index: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
-21:33:31 BIOCONDA INFO (OUT) 
-21:33:31 BIOCONDA INFO (OUT) Adding in variants from internal_defaults
-21:33:31 BIOCONDA INFO (OUT) Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/conda_build_config.yaml
-21:33:31 BIOCONDA INFO (ERR) INFO:conda_build.variants:Adding in variants from internal_defaults
-21:33:31 BIOCONDA INFO (ERR) INFO:conda_build.variants:Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/conda_build_config.yaml
-21:33:31 BIOCONDA INFO (ERR) INFO:conda_build.variants:Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/bioconda_utils/bioconda_utils-conda_build_config.yaml
-21:33:31 BIOCONDA INFO (OUT) Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/bioconda_utils/bioconda_utils-conda_build_config.yaml
-21:33:32 BIOCONDA INFO (OUT) Attempting to finalize metadata for perl-convert-pheno
-21:33:32 BIOCONDA INFO (ERR) INFO:conda_build.metadata:Attempting to finalize metadata for perl-convert-pheno
-21:33:32 BIOCONDA INFO (OUT) conda-forge/linux-64                                        Using cache
-21:33:32 BIOCONDA INFO (OUT) conda-forge/noarch                                          Using cache
-21:33:32 BIOCONDA INFO (OUT) bioconda/linux-64                                           Using cache
-21:33:32 BIOCONDA INFO (OUT) bioconda/noarch                                             Using cache
-21:33:34 BIOCONDA INFO (OUT) Reloading output folder: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
-21:34:14 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): repo.anaconda.com:443
-21:34:15 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:https://repo.anaconda.com:443 "GET /pkgs/main/linux-64/repodata.json HTTP/1.1" 304 0
-21:34:17 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:https://repo.anaconda.com:443 "GET /pkgs/main/noarch/repodata.json HTTP/1.1" 304 0
-21:34:18 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:https://repo.anaconda.com:443 "GET /pkgs/r/linux-64/repodata.json HTTP/1.1" 304 0
-21:34:18 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:https://repo.anaconda.com:443 "GET /pkgs/r/noarch/repodata.json HTTP/1.1" 304 0
-.21:34:44 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:https://repo.anaconda.com:443 "GET /pkgs/r/channeldata.json HTTP/1.1" 200 None
-21:34:44 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:https://repo.anaconda.com:443 "GET /pkgs/main/channeldata.json HTTP/1.1" 200 None
-21:34:45 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): conda.anaconda.org:443
-21:34:45 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:https://conda.anaconda.org:443 "GET /bioconda/channeldata.json HTTP/1.1" 200 None
-21:34:48 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:https://conda.anaconda.org:443 "GET /conda-forge/channeldata.json HTTP/1.1" 200 None
-21:34:49 BIOCONDA INFO (OUT) Reloading output folder: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
-21:34:50 BIOCONDA INFO (OUT) Reloading output folder: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
-21:34:50 BIOCONDA INFO (OUT) BUILD START: ['perl-convert-pheno-0.09-pl5321h77fc8f9_0.tar.bz2']
-21:34:50 BIOCONDA INFO (OUT) Reloading output folder: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
-21:34:50 BIOCONDA INFO (OUT) 
-21:34:50 BIOCONDA INFO (OUT) ## Package Plan ##
-21:34:50 BIOCONDA INFO (OUT) 
-21:34:50 BIOCONDA INFO (OUT)   environment location: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld/perl-convert-pheno_1688067211100/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh
-21:34:50 BIOCONDA INFO (OUT) 
-21:34:50 BIOCONDA INFO (OUT) 
-21:34:50 BIOCONDA INFO (OUT) The following NEW packages will be INSTALLED:
-21:34:50 BIOCONDA INFO (OUT) 
-21:34:50 BIOCONDA INFO (OUT)     _libgcc_mutex:              0.1-conda_forge         conda-forge
-21:34:50 BIOCONDA INFO (OUT)     _openmp_mutex:              4.5-2_gnu               conda-forge
-21:34:50 BIOCONDA INFO (OUT)     libgcc-ng:                  13.1.0-he5830b7_0       conda-forge
-21:34:50 BIOCONDA INFO (OUT)     libgomp:                    13.1.0-he5830b7_0       conda-forge
-21:34:50 BIOCONDA INFO (OUT)     libnsl:                     2.0.0-h7f98852_0        conda-forge
-21:34:50 BIOCONDA INFO (OUT)     libstdcxx-ng:               13.1.0-hfd8a6a1_0       conda-forge
-21:34:50 BIOCONDA INFO (OUT)     libzlib:                    1.2.13-hd590300_5       conda-forge
-21:34:50 BIOCONDA INFO (OUT)     perl:                       5.32.1-2_h7f98852_perl5 conda-forge
-21:34:50 BIOCONDA INFO (OUT)     perl-app-cpanminus:         1.7046-pl5321hd8ed1ab_0 conda-forge
-21:34:50 BIOCONDA INFO (OUT)     perl-carp:                  1.50-pl5321hd8ed1ab_0   conda-forge
-21:34:50 BIOCONDA INFO (OUT)     perl-common-sense:          3.75-pl5321hd8ed1ab_0   conda-forge
-21:34:50 BIOCONDA INFO (OUT)     perl-dbd-sqlite:            1.72-pl5321h031d066_1   bioconda
-21:34:50 BIOCONDA INFO (OUT)     perl-dbi:                   1.643-pl5321h166bdaf_0  conda-forge
-21:34:50 BIOCONDA INFO (OUT)     perl-exporter:              5.74-pl5321hd8ed1ab_0   conda-forge
-21:34:50 BIOCONDA INFO (OUT)     perl-extutils-makemaker:    7.70-pl5321hd8ed1ab_0   conda-forge
-21:34:50 BIOCONDA INFO (OUT)     perl-file-sharedir-install: 0.13-pl5321hdfd78af_1   bioconda
-21:34:50 BIOCONDA INFO (OUT)     perl-json-xs:               4.03-pl5321h4ac6f70_2   bioconda
-21:34:50 BIOCONDA INFO (OUT)     perl-perlio-gzip:           0.20-pl5321he4a0461_5   bioconda
-21:34:50 BIOCONDA INFO (OUT)     perl-sort-naturally:        1.03-pl5321hdfd78af_3   bioconda
-21:34:50 BIOCONDA INFO (OUT)     perl-sub-uplevel:           0.2800-pl5321h166bdaf_0 conda-forge
-21:34:50 BIOCONDA INFO (OUT)     perl-test-exception:        0.43-pl5321hd8ed1ab_0   conda-forge
-21:34:50 BIOCONDA INFO (OUT)     perl-types-serialiser:      1.01-pl5321hdfd78af_0   bioconda
-21:34:50 BIOCONDA INFO (OUT)     zlib:                       1.2.13-hd590300_5       conda-forge
-21:34:50 BIOCONDA INFO (OUT) 
-21:34:50 BIOCONDA INFO (OUT) Preparing transaction: ...working... done
-21:34:51 BIOCONDA INFO (OUT) Verifying transaction: ...working... done
-21:34:51 BIOCONDA INFO (OUT) Executing transaction: ...working... done
-21:34:51 BIOCONDA INFO (OUT) Reloading output folder: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
-21:34:51 BIOCONDA INFO (OUT) Reloading output folder: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
-21:34:52 BIOCONDA INFO (OUT) 
-21:34:52 BIOCONDA INFO (OUT) ## Package Plan ##
-21:34:52 BIOCONDA INFO (OUT) 
-21:34:52 BIOCONDA INFO (OUT)   environment location: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld/perl-convert-pheno_1688067211100/_build_env
-21:34:52 BIOCONDA INFO (OUT) 
-21:34:52 BIOCONDA INFO (OUT) 
-21:34:52 BIOCONDA INFO (OUT) The following NEW packages will be INSTALLED:
-21:34:52 BIOCONDA INFO (OUT) 
-21:34:52 BIOCONDA INFO (OUT)     _libgcc_mutex:           0.1-conda_forge    conda-forge
-21:34:52 BIOCONDA INFO (OUT)     _openmp_mutex:           4.5-2_gnu          conda-forge
-21:34:52 BIOCONDA INFO (OUT)     binutils_impl_linux-64:  2.39-he00db2b_1    conda-forge
-21:34:52 BIOCONDA INFO (OUT)     binutils_linux-64:       2.39-h5fc0e48_13   conda-forge
-21:34:52 BIOCONDA INFO (OUT)     gcc_impl_linux-64:       10.4.0-h5231bdf_19 conda-forge
-21:34:52 BIOCONDA INFO (OUT)     gcc_linux-64:            10.4.0-h9215b83_13 conda-forge
-21:34:52 BIOCONDA INFO (OUT)     kernel-headers_linux-64: 2.6.32-he073ed8_15 conda-forge
-21:34:52 BIOCONDA INFO (OUT)     ld_impl_linux-64:        2.39-hcc3a1bd_1    conda-forge
-21:34:52 BIOCONDA INFO (OUT)     libgcc-devel_linux-64:   10.4.0-hd38fd1e_19 conda-forge
-21:34:52 BIOCONDA INFO (OUT)     libgcc-ng:               13.1.0-he5830b7_0  conda-forge
-21:34:52 BIOCONDA INFO (OUT)     libgomp:                 13.1.0-he5830b7_0  conda-forge
-21:34:52 BIOCONDA INFO (OUT)     libsanitizer:            10.4.0-h5246dfb_19 conda-forge
-21:34:52 BIOCONDA INFO (OUT)     libstdcxx-ng:            13.1.0-hfd8a6a1_0  conda-forge
-21:34:52 BIOCONDA INFO (OUT)     make:                    4.3-hd18ef5c_1     conda-forge
-21:34:52 BIOCONDA INFO (OUT)     sysroot_linux-64:        2.12-he073ed8_15   conda-forge
-21:34:52 BIOCONDA INFO (OUT) 
-21:34:52 BIOCONDA INFO (OUT) Preparing transaction: ...working... done
-21:34:52 BIOCONDA INFO (OUT) Verifying transaction: ...working... done
-21:34:53 BIOCONDA INFO (OUT) Executing transaction: ...working... done
-21:34:53 BIOCONDA INFO (OUT) Source cache directory is: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld/src_cache
-21:34:53 BIOCONDA INFO (OUT) Found source in cache: Convert-Pheno-0.09_04b00543c6.tar.gz
-21:34:53 BIOCONDA INFO (ERR) INFO:conda_build.source:Source cache directory is: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld/src_cache
-21:34:53 BIOCONDA INFO (ERR) INFO:conda_build.source:Found source in cache: Convert-Pheno-0.09_04b00543c6.tar.gz
-21:34:55 BIOCONDA INFO (ERR) ln: failed to create symbolic link '/home/ivo/mambaforge/envs/biocondaPy37/conda-bld/perl-convert-pheno_1688067211100/_build_env/lib/perl5/5.32/site_perl': No such file or directory
-21:34:56 BIOCONDA INFO (OUT) Extracting download
-21:34:56 BIOCONDA INFO (OUT) source tree in: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld/perl-convert-pheno_1688067211100/work
-21:34:56 BIOCONDA INFO (OUT) export PREFIX=/home/ivo/mambaforge/envs/biocondaPy37/conda-bld/perl-convert-pheno_1688067211100/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh
-21:34:56 BIOCONDA INFO (OUT) export BUILD_PREFIX=/home/ivo/mambaforge/envs/biocondaPy37/conda-bld/perl-convert-pheno_1688067211100/_build_env
-21:34:56 BIOCONDA INFO (OUT) export SRC_DIR=/home/ivo/mambaforge/envs/biocondaPy37/conda-bld/perl-convert-pheno_1688067211100/work
-21:34:56 BIOCONDA INFO (OUT) INFO: activate-binutils_linux-64.sh made the following environmental changes:
-21:34:56 BIOCONDA INFO (OUT) +ADDR2LINE=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-addr2line
-21:34:56 BIOCONDA INFO (OUT) +AR=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-ar
-21:34:56 BIOCONDA INFO (OUT) +AS=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-as
-21:34:56 BIOCONDA INFO (OUT) +CXXFILT=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-c++filt
-21:34:56 BIOCONDA INFO (OUT) +ELFEDIT=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-elfedit
-21:34:56 BIOCONDA INFO (OUT) +GPROF=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gprof
-21:34:56 BIOCONDA INFO (OUT) +LD_GOLD=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-ld.gold
-21:34:56 BIOCONDA INFO (OUT) +LD=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-ld
-21:34:56 BIOCONDA INFO (OUT) +NM=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-nm
-21:34:56 BIOCONDA INFO (OUT) +OBJCOPY=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-objcopy
-21:34:56 BIOCONDA INFO (OUT) +OBJDUMP=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-objdump
-21:34:56 BIOCONDA INFO (OUT) +RANLIB=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-ranlib
-21:34:56 BIOCONDA INFO (OUT) +READELF=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-readelf
-21:34:56 BIOCONDA INFO (OUT) +SIZE=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-size
-21:34:56 BIOCONDA INFO (OUT) +STRINGS=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-strings
-21:34:56 BIOCONDA INFO (OUT) +STRIP=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-strip
-21:34:56 BIOCONDA INFO (OUT) INFO: activate-gcc_linux-64.sh made the following environmental changes:
-21:34:56 BIOCONDA INFO (OUT) +build_alias=x86_64-conda-linux-gnu
-21:34:56 BIOCONDA INFO (OUT) -BUILD=x86_64-conda_cos6-linux-gnu
-21:34:56 BIOCONDA INFO (OUT) +BUILD=x86_64-conda-linux-gnu
-21:34:56 BIOCONDA INFO (OUT) +CC_FOR_BUILD=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-cc
-21:34:56 BIOCONDA INFO (OUT) +CC=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-cc
-21:34:56 BIOCONDA INFO (OUT) +CFLAGS=-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/perl-convert-pheno-0.09 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix
-21:34:56 BIOCONDA INFO (OUT) +CMAKE_ARGS=-DCMAKE_AR=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-ld -DCMAKE_STRIP=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-strip -DCMAKE_FIND_ROOT_PATH_MODE_PROGRAM=NEVER -DCMAKE_FIND_ROOT_PATH_MODE_LIBRARY=ONLY -DCMAKE_FIND_ROOT_PATH_MODE_INCLUDE=ONLY -DCMAKE_FIND_ROOT_PATH=$PREFIX;$BUILD_PREFIX/x86_64-conda-linux-gnu/sysroot -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_PROGRAM_PATH=$BUILD_PREFIX/bin;$PREFIX/bin
-21:34:56 BIOCONDA INFO (OUT) +CMAKE_PREFIX_PATH=$PREFIX:$BUILD_PREFIX/x86_64-conda-linux-gnu/sysroot/usr
-21:34:56 BIOCONDA INFO (OUT) -CONDA_BUILD_SYSROOT=
-21:34:56 BIOCONDA INFO (OUT) +CONDA_BUILD_SYSROOT=$BUILD_PREFIX/x86_64-conda-linux-gnu/sysroot
-21:34:56 BIOCONDA INFO (OUT) +_CONDA_PYTHON_SYSCONFIGDATA_NAME=_sysconfigdata_x86_64_conda_cos6_linux_gnu
-21:34:56 BIOCONDA INFO (OUT) +CONDA_TOOLCHAIN_BUILD=x86_64-conda-linux-gnu
-21:34:56 BIOCONDA INFO (OUT) +CONDA_TOOLCHAIN_HOST=x86_64-conda-linux-gnu
-21:34:56 BIOCONDA INFO (OUT) +CPPFLAGS=-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem $PREFIX/include
-21:34:56 BIOCONDA INFO (OUT) +CPP=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-cpp
-21:34:56 BIOCONDA INFO (OUT) +DEBUG_CFLAGS=-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/perl-convert-pheno-0.09 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix
-21:34:56 BIOCONDA INFO (OUT) +DEBUG_CPPFLAGS=-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem $PREFIX/include
-21:34:56 BIOCONDA INFO (OUT) +GCC_AR=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gcc-ar
-21:34:56 BIOCONDA INFO (OUT) +GCC=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gcc
-21:34:56 BIOCONDA INFO (OUT) +GCC_NM=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gcc-nm
-21:34:56 BIOCONDA INFO (OUT) +GCC_RANLIB=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gcc-ranlib
-21:34:56 BIOCONDA INFO (OUT) +host_alias=x86_64-conda-linux-gnu
-21:34:56 BIOCONDA INFO (OUT) +HOST=x86_64-conda-linux-gnu
-21:34:56 BIOCONDA INFO (OUT) +LDFLAGS=-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,$PREFIX/lib -Wl,-rpath-link,$PREFIX/lib -L$PREFIX/lib
-21:34:56 BIOCONDA INFO (OUT) +MESON_ARGS=--buildtype release --prefix=$PREFIX -Dlibdir=lib
-21:34:56 BIOCONDA INFO (OUT) perl_version: 5.32.1
-21:34:56 BIOCONDA INFO (OUT) CONDA_PREFIX: $BUILD_PREFIX
-21:34:56 BIOCONDA INFO (OUT) PERL5LIB: $BUILD_PREFIX/lib:$BUILD_PREFIX/lib/perl5:$BUILD_PREFIX/lib/perl5/site_perl:
-21:34:56 BIOCONDA INFO (ERR) Traceback (most recent call last):
-21:34:56 BIOCONDA INFO (ERR)   File "/home/ivo/mambaforge/envs/biocondaPy37/bin/conda-mambabuild", line 10, in <module>
-21:34:56 BIOCONDA INFO (ERR)     sys.exit(main())
-21:34:56 BIOCONDA INFO (ERR)   File "/home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/boa/cli/mambabuild.py", line 239, in main
-21:34:56 BIOCONDA INFO (ERR)     call_conda_build(action, config)
-21:34:56 BIOCONDA INFO (ERR)   File "/home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/boa/cli/mambabuild.py", line 218, in call_conda_build
-21:34:56 BIOCONDA INFO (ERR)     **kwargs,
-21:34:56 BIOCONDA INFO (ERR)   File "/home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/conda_build/api.py", line 195, in build
-21:34:56 BIOCONDA INFO (ERR)     variants=variants
-21:34:56 BIOCONDA INFO (ERR)   File "/home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/conda_build/build.py", line 3093, in build_tree
-21:34:56 BIOCONDA INFO (ERR)     notest=notest,
-21:34:56 BIOCONDA INFO (ERR)   File "/home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/conda_build/build.py", line 2212, in build
-21:34:56 BIOCONDA INFO (ERR)     cwd=src_dir, stats=build_stats)
-21:34:56 BIOCONDA INFO (ERR)   File "/home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/conda_build/utils.py", line 410, in check_call_env
-21:34:56 BIOCONDA INFO (ERR)     return _func_defaulting_env_to_os_environ('call', *popenargs, **kwargs)
-21:34:56 BIOCONDA INFO (ERR)   File "/home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/conda_build/utils.py", line 390, in _func_defaulting_env_to_os_environ
-21:34:56 BIOCONDA INFO (ERR)     raise subprocess.CalledProcessError(proc.returncode, _args)
-21:34:56 BIOCONDA INFO (ERR) subprocess.CalledProcessError: Command '['/bin/bash', '-o', 'errexit', '/home/ivo/mambaforge/envs/biocondaPy37/conda-bld/perl-convert-pheno_1688067211100/work/conda_build.sh']' returned non-zero exit status 1.
-21:35:01 BIOCONDA ERROR COMMAND FAILED (exited with 1): /home/ivo/mambaforge/envs/biocondaPy37/bin/conda mambabuild --override-channels --no-anaconda-upload -c conda-forge -c bioconda -c defaults -e /home/ivo/mambaforge/envs/biocondaPy37/conda_build_config.yaml -e /home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/bioconda_utils/bioconda_utils-conda_build_config.yaml recipes/perl-convert-pheno/meta.yaml
+21:48:07 BIOCONDA INFO (COMMAND) /home/ivo/mambaforge/envs/biocondaPy37/bin/conda mambabuild --override-channels --no-anaconda-upload -c conda-forge -c bioconda -c defaults -e /home/ivo/mambaforge/envs/biocondaPy37/conda_build_config.yaml -e /home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/bioconda_utils/bioconda_utils-conda_build_config.yaml recipes/perl-convert-pheno/meta.yaml
+21:48:07 BIOCONDA INFO (ERR) /home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/conda_build/cli/main_build.py:390: UserWarning: RECIPE_PATH received is a file. File: recipes/perl-convert-pheno/meta.yaml
+21:48:07 BIOCONDA INFO (ERR) It should be a path to a folder.
+21:48:07 BIOCONDA INFO (ERR) Forcing conda-build to use the recipe file.
+21:48:07 BIOCONDA INFO (ERR)   UserWarning
+21:48:07 BIOCONDA INFO (ERR) No numpy version specified in conda_build_config.yaml.  Falling back to default numpy value of 1.16
+21:48:07 BIOCONDA INFO (ERR) WARNING:conda_build.metadata:No numpy version specified in conda_build_config.yaml.  Falling back to default numpy value of 1.16
+21:48:07 BIOCONDA INFO (ERR) INFO:conda_build.variants:Adding in variants from internal_defaults
+21:48:07 BIOCONDA INFO (OUT) Updating build index: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
+21:48:07 BIOCONDA INFO (OUT) 
+21:48:07 BIOCONDA INFO (OUT) Adding in variants from internal_defaults
+21:48:07 BIOCONDA INFO (ERR) INFO:conda_build.variants:Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/conda_build_config.yaml
+21:48:07 BIOCONDA INFO (OUT) Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/conda_build_config.yaml
+21:48:07 BIOCONDA INFO (OUT) Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/bioconda_utils/bioconda_utils-conda_build_config.yaml
+21:48:07 BIOCONDA INFO (ERR) INFO:conda_build.variants:Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/bioconda_utils/bioconda_utils-conda_build_config.yaml
+21:48:08 BIOCONDA INFO (OUT) Attempting to finalize metadata for perl-convert-pheno
+21:48:08 BIOCONDA INFO (ERR) INFO:conda_build.metadata:Attempting to finalize metadata for perl-convert-pheno
+21:48:08 BIOCONDA INFO (OUT) conda-forge/linux-64                                        Using cache
+21:48:08 BIOCONDA INFO (OUT) conda-forge/noarch                                          Using cache
+21:48:08 BIOCONDA INFO (OUT) bioconda/linux-64                                           Using cache
+21:48:08 BIOCONDA INFO (OUT) bioconda/noarch                                             Using cache
+21:48:10 BIOCONDA INFO (OUT) Reloading output folder: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
+21:48:51 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): repo.anaconda.com:443
+21:48:51 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:https://repo.anaconda.com:443 "GET /pkgs/main/linux-64/repodata.json HTTP/1.1" 304 0
+21:48:53 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:https://repo.anaconda.com:443 "GET /pkgs/main/noarch/repodata.json HTTP/1.1" 304 0
+21:48:54 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:https://repo.anaconda.com:443 "GET /pkgs/r/linux-64/repodata.json HTTP/1.1" 304 0
+21:48:54 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:https://repo.anaconda.com:443 "GET /pkgs/r/noarch/repodata.json HTTP/1.1" 304 0
+.21:49:20 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:https://repo.anaconda.com:443 "GET /pkgs/r/channeldata.json HTTP/1.1" 200 None
+21:49:21 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): conda.anaconda.org:443
+21:49:21 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:https://conda.anaconda.org:443 "GET /bioconda/channeldata.json HTTP/1.1" 200 None
+21:49:23 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:https://conda.anaconda.org:443 "GET /conda-forge/channeldata.json HTTP/1.1" 200 None
+21:49:24 BIOCONDA INFO (ERR) DEBUG:urllib3.connectionpool:https://repo.anaconda.com:443 "GET /pkgs/main/channeldata.json HTTP/1.1" 200 None
+21:49:24 BIOCONDA INFO (OUT) Reloading output folder: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
+21:49:24 BIOCONDA INFO (OUT) Reloading output folder: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
+21:49:25 BIOCONDA INFO (OUT) BUILD START: ['perl-convert-pheno-0.09-pl5321h77fc8f9_0.tar.bz2']
+21:49:25 BIOCONDA INFO (OUT) Reloading output folder: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
+21:49:25 BIOCONDA INFO (OUT) 
+21:49:25 BIOCONDA INFO (OUT) ## Package Plan ##
+21:49:25 BIOCONDA INFO (OUT) 
+21:49:25 BIOCONDA INFO (OUT)   environment location: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld/perl-convert-pheno_1688068087609/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh
+21:49:25 BIOCONDA INFO (OUT) 
+21:49:25 BIOCONDA INFO (OUT) 
+21:49:25 BIOCONDA INFO (OUT) The following NEW packages will be INSTALLED:
+21:49:25 BIOCONDA INFO (OUT) 
+21:49:25 BIOCONDA INFO (OUT)     _libgcc_mutex:              0.1-conda_forge         conda-forge
+21:49:25 BIOCONDA INFO (OUT)     _openmp_mutex:              4.5-2_gnu               conda-forge
+21:49:25 BIOCONDA INFO (OUT)     libgcc-ng:                  13.1.0-he5830b7_0       conda-forge
+21:49:25 BIOCONDA INFO (OUT)     libgomp:                    13.1.0-he5830b7_0       conda-forge
+21:49:25 BIOCONDA INFO (OUT)     libnsl:                     2.0.0-h7f98852_0        conda-forge
+21:49:25 BIOCONDA INFO (OUT)     libstdcxx-ng:               13.1.0-hfd8a6a1_0       conda-forge
+21:49:25 BIOCONDA INFO (OUT)     libzlib:                    1.2.13-hd590300_5       conda-forge
+21:49:25 BIOCONDA INFO (OUT)     perl:                       5.32.1-2_h7f98852_perl5 conda-forge
+21:49:25 BIOCONDA INFO (OUT)     perl-app-cpanminus:         1.7046-pl5321hd8ed1ab_0 conda-forge
+21:49:25 BIOCONDA INFO (OUT)     perl-carp:                  1.50-pl5321hd8ed1ab_0   conda-forge
+21:49:25 BIOCONDA INFO (OUT)     perl-common-sense:          3.75-pl5321hd8ed1ab_0   conda-forge
+21:49:25 BIOCONDA INFO (OUT)     perl-dbd-sqlite:            1.72-pl5321h031d066_1   bioconda
+21:49:25 BIOCONDA INFO (OUT)     perl-dbi:                   1.643-pl5321h166bdaf_0  conda-forge
+21:49:25 BIOCONDA INFO (OUT)     perl-exporter:              5.74-pl5321hd8ed1ab_0   conda-forge
+21:49:25 BIOCONDA INFO (OUT)     perl-extutils-makemaker:    7.70-pl5321hd8ed1ab_0   conda-forge
+21:49:25 BIOCONDA INFO (OUT)     perl-file-sharedir-install: 0.13-pl5321hdfd78af_1   bioconda
+21:49:25 BIOCONDA INFO (OUT)     perl-json-xs:               4.03-pl5321h4ac6f70_2   bioconda
+21:49:25 BIOCONDA INFO (OUT)     perl-perlio-gzip:           0.20-pl5321he4a0461_5   bioconda
+21:49:25 BIOCONDA INFO (OUT)     perl-sort-naturally:        1.03-pl5321hdfd78af_3   bioconda
+21:49:25 BIOCONDA INFO (OUT)     perl-sub-uplevel:           0.2800-pl5321h166bdaf_0 conda-forge
+21:49:25 BIOCONDA INFO (OUT)     perl-test-exception:        0.43-pl5321hd8ed1ab_0   conda-forge
+21:49:25 BIOCONDA INFO (OUT)     perl-types-serialiser:      1.01-pl5321hdfd78af_0   bioconda
+21:49:25 BIOCONDA INFO (OUT)     zlib:                       1.2.13-hd590300_5       conda-forge
+21:49:25 BIOCONDA INFO (OUT) 
+21:49:25 BIOCONDA INFO (OUT) Preparing transaction: ...working... done
+21:49:26 BIOCONDA INFO (OUT) Verifying transaction: ...working... done
+21:49:26 BIOCONDA INFO (OUT) Executing transaction: ...working... done
+21:49:26 BIOCONDA INFO (OUT) Reloading output folder: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
+21:49:26 BIOCONDA INFO (OUT) Reloading output folder: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
+21:49:27 BIOCONDA INFO (OUT) 
+21:49:27 BIOCONDA INFO (OUT) ## Package Plan ##
+21:49:27 BIOCONDA INFO (OUT) 
+21:49:27 BIOCONDA INFO (OUT)   environment location: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld/perl-convert-pheno_1688068087609/_build_env
+21:49:27 BIOCONDA INFO (OUT) 
+21:49:27 BIOCONDA INFO (OUT) 
+21:49:27 BIOCONDA INFO (OUT) The following NEW packages will be INSTALLED:
+21:49:27 BIOCONDA INFO (OUT) 
+21:49:27 BIOCONDA INFO (OUT)     _libgcc_mutex:           0.1-conda_forge    conda-forge
+21:49:27 BIOCONDA INFO (OUT)     _openmp_mutex:           4.5-2_gnu          conda-forge
+21:49:27 BIOCONDA INFO (OUT)     binutils_impl_linux-64:  2.39-he00db2b_1    conda-forge
+21:49:27 BIOCONDA INFO (OUT)     binutils_linux-64:       2.39-h5fc0e48_13   conda-forge
+21:49:27 BIOCONDA INFO (OUT)     gcc_impl_linux-64:       10.4.0-h5231bdf_19 conda-forge
+21:49:27 BIOCONDA INFO (OUT)     gcc_linux-64:            10.4.0-h9215b83_13 conda-forge
+21:49:27 BIOCONDA INFO (OUT)     kernel-headers_linux-64: 2.6.32-he073ed8_15 conda-forge
+21:49:27 BIOCONDA INFO (OUT)     ld_impl_linux-64:        2.39-hcc3a1bd_1    conda-forge
+21:49:27 BIOCONDA INFO (OUT)     libgcc-devel_linux-64:   10.4.0-hd38fd1e_19 conda-forge
+21:49:27 BIOCONDA INFO (OUT)     libgcc-ng:               13.1.0-he5830b7_0  conda-forge
+21:49:27 BIOCONDA INFO (OUT)     libgomp:                 13.1.0-he5830b7_0  conda-forge
+21:49:27 BIOCONDA INFO (OUT)     libsanitizer:            10.4.0-h5246dfb_19 conda-forge
+21:49:27 BIOCONDA INFO (OUT)     libstdcxx-ng:            13.1.0-hfd8a6a1_0  conda-forge
+21:49:27 BIOCONDA INFO (OUT)     make:                    4.3-hd18ef5c_1     conda-forge
+21:49:27 BIOCONDA INFO (OUT)     sysroot_linux-64:        2.12-he073ed8_15   conda-forge
+21:49:27 BIOCONDA INFO (OUT) 
+21:49:27 BIOCONDA INFO (OUT) Preparing transaction: ...working... done
+21:49:27 BIOCONDA INFO (OUT) Verifying transaction: ...working... done
+21:49:27 BIOCONDA INFO (OUT) Executing transaction: ...working... done
+21:49:27 BIOCONDA INFO (OUT) Source cache directory is: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld/src_cache
+21:49:27 BIOCONDA INFO (OUT) Found source in cache: Convert-Pheno-0.09_04b00543c6.tar.gz
+21:49:27 BIOCONDA INFO (ERR) INFO:conda_build.source:Source cache directory is: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld/src_cache
+21:49:27 BIOCONDA INFO (ERR) INFO:conda_build.source:Found source in cache: Convert-Pheno-0.09_04b00543c6.tar.gz
+21:49:29 BIOCONDA INFO (ERR) unlink: cannot unlink '/home/ivo/mambaforge/envs/biocondaPy37/conda-bld/perl-convert-pheno_1688068087609/_build_env/lib/perl5/5.32/site_perl': No such file or directory
+21:49:31 BIOCONDA INFO (OUT) Extracting download
+21:49:31 BIOCONDA INFO (OUT) source tree in: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld/perl-convert-pheno_1688068087609/work
+21:49:31 BIOCONDA INFO (OUT) export PREFIX=/home/ivo/mambaforge/envs/biocondaPy37/conda-bld/perl-convert-pheno_1688068087609/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh
+21:49:31 BIOCONDA INFO (OUT) export BUILD_PREFIX=/home/ivo/mambaforge/envs/biocondaPy37/conda-bld/perl-convert-pheno_1688068087609/_build_env
+21:49:31 BIOCONDA INFO (OUT) export SRC_DIR=/home/ivo/mambaforge/envs/biocondaPy37/conda-bld/perl-convert-pheno_1688068087609/work
+21:49:31 BIOCONDA INFO (OUT) INFO: activate-binutils_linux-64.sh made the following environmental changes:
+21:49:31 BIOCONDA INFO (OUT) +ADDR2LINE=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-addr2line
+21:49:31 BIOCONDA INFO (OUT) +AR=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-ar
+21:49:31 BIOCONDA INFO (OUT) +AS=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-as
+21:49:31 BIOCONDA INFO (OUT) +CXXFILT=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-c++filt
+21:49:31 BIOCONDA INFO (OUT) +ELFEDIT=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-elfedit
+21:49:31 BIOCONDA INFO (OUT) +GPROF=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gprof
+21:49:31 BIOCONDA INFO (OUT) +LD_GOLD=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-ld.gold
+21:49:31 BIOCONDA INFO (OUT) +LD=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-ld
+21:49:31 BIOCONDA INFO (OUT) +NM=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-nm
+21:49:31 BIOCONDA INFO (OUT) +OBJCOPY=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-objcopy
+21:49:31 BIOCONDA INFO (OUT) +OBJDUMP=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-objdump
+21:49:31 BIOCONDA INFO (OUT) +RANLIB=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-ranlib
+21:49:31 BIOCONDA INFO (OUT) +READELF=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-readelf
+21:49:31 BIOCONDA INFO (OUT) +SIZE=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-size
+21:49:31 BIOCONDA INFO (OUT) +STRINGS=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-strings
+21:49:31 BIOCONDA INFO (ERR) Traceback (most recent call last):
+21:49:31 BIOCONDA INFO (OUT) +STRIP=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-strip
+21:49:31 BIOCONDA INFO (OUT) INFO: activate-gcc_linux-64.sh made the following environmental changes:
+21:49:31 BIOCONDA INFO (ERR)   File "/home/ivo/mambaforge/envs/biocondaPy37/bin/conda-mambabuild", line 10, in <module>
+21:49:31 BIOCONDA INFO (OUT) +build_alias=x86_64-conda-linux-gnu
+21:49:31 BIOCONDA INFO (OUT) -BUILD=x86_64-conda_cos6-linux-gnu
+21:49:31 BIOCONDA INFO (OUT) +BUILD=x86_64-conda-linux-gnu
+21:49:31 BIOCONDA INFO (ERR)     sys.exit(main())
+21:49:31 BIOCONDA INFO (OUT) +CC_FOR_BUILD=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-cc
+21:49:31 BIOCONDA INFO (OUT) +CC=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-cc
+21:49:31 BIOCONDA INFO (ERR)   File "/home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/boa/cli/mambabuild.py", line 239, in main
+21:49:31 BIOCONDA INFO (ERR)     call_conda_build(action, config)
+21:49:31 BIOCONDA INFO (OUT) +CFLAGS=-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/perl-convert-pheno-0.09 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix
+21:49:31 BIOCONDA INFO (ERR)   File "/home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/boa/cli/mambabuild.py", line 218, in call_conda_build
+21:49:31 BIOCONDA INFO (ERR)     **kwargs,
+21:49:31 BIOCONDA INFO (ERR)   File "/home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/conda_build/api.py", line 195, in build
+21:49:31 BIOCONDA INFO (ERR)     variants=variants
+21:49:31 BIOCONDA INFO (ERR)   File "/home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/conda_build/build.py", line 3093, in build_tree
+21:49:31 BIOCONDA INFO (ERR)     notest=notest,
+21:49:31 BIOCONDA INFO (ERR)   File "/home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/conda_build/build.py", line 2212, in build
+21:49:31 BIOCONDA INFO (ERR)     cwd=src_dir, stats=build_stats)
+21:49:31 BIOCONDA INFO (ERR)   File "/home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/conda_build/utils.py", line 410, in check_call_env
+21:49:31 BIOCONDA INFO (ERR)     return _func_defaulting_env_to_os_environ('call', *popenargs, **kwargs)
+21:49:31 BIOCONDA INFO (ERR)   File "/home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/conda_build/utils.py", line 390, in _func_defaulting_env_to_os_environ
+21:49:31 BIOCONDA INFO (ERR)     raise subprocess.CalledProcessError(proc.returncode, _args)
+21:49:31 BIOCONDA INFO (OUT) +CMAKE_ARGS=-DCMAKE_AR=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-ld -DCMAKE_STRIP=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-strip -DCMAKE_FIND_ROOT_PATH_MODE_PROGRAM=NEVER -DCMAKE_FIND_ROOT_PATH_MODE_LIBRARY=ONLY -DCMAKE_FIND_ROOT_PATH_MODE_INCLUDE=ONLY -DCMAKE_FIND_ROOT_PATH=$PREFIX;$BUILD_PREFIX/x86_64-conda-linux-gnu/sysroot -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_PROGRAM_PATH=$BUILD_PREFIX/bin;$PREFIX/bin
+21:49:31 BIOCONDA INFO (OUT) +CMAKE_PREFIX_PATH=$PREFIX:$BUILD_PREFIX/x86_64-conda-linux-gnu/sysroot/usr
+21:49:31 BIOCONDA INFO (OUT) -CONDA_BUILD_SYSROOT=
+21:49:31 BIOCONDA INFO (ERR) subprocess.CalledProcessError: Command '['/bin/bash', '-o', 'errexit', '/home/ivo/mambaforge/envs/biocondaPy37/conda-bld/perl-convert-pheno_1688068087609/work/conda_build.sh']' returned non-zero exit status 1.
+21:49:31 BIOCONDA INFO (OUT) +CONDA_BUILD_SYSROOT=$BUILD_PREFIX/x86_64-conda-linux-gnu/sysroot
+21:49:31 BIOCONDA INFO (OUT) +_CONDA_PYTHON_SYSCONFIGDATA_NAME=_sysconfigdata_x86_64_conda_cos6_linux_gnu
+21:49:31 BIOCONDA INFO (OUT) +CONDA_TOOLCHAIN_BUILD=x86_64-conda-linux-gnu
+21:49:31 BIOCONDA INFO (OUT) +CONDA_TOOLCHAIN_HOST=x86_64-conda-linux-gnu
+21:49:31 BIOCONDA INFO (OUT) +CPPFLAGS=-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem $PREFIX/include
+21:49:31 BIOCONDA INFO (OUT) +CPP=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-cpp
+21:49:31 BIOCONDA INFO (OUT) +DEBUG_CFLAGS=-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/perl-convert-pheno-0.09 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix
+21:49:31 BIOCONDA INFO (OUT) +DEBUG_CPPFLAGS=-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem $PREFIX/include
+21:49:31 BIOCONDA INFO (OUT) +GCC_AR=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gcc-ar
+21:49:31 BIOCONDA INFO (OUT) +GCC=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gcc
+21:49:31 BIOCONDA INFO (OUT) +GCC_NM=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gcc-nm
+21:49:31 BIOCONDA INFO (OUT) +GCC_RANLIB=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-gcc-ranlib
+21:49:31 BIOCONDA INFO (OUT) +host_alias=x86_64-conda-linux-gnu
+21:49:31 BIOCONDA INFO (OUT) +HOST=x86_64-conda-linux-gnu
+21:49:31 BIOCONDA INFO (OUT) +LDFLAGS=-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,$PREFIX/lib -Wl,-rpath-link,$PREFIX/lib -L$PREFIX/lib
+21:49:31 BIOCONDA INFO (OUT) +MESON_ARGS=--buildtype release --prefix=$PREFIX -Dlibdir=lib
+21:49:31 BIOCONDA INFO (OUT) perl_version: 5.32.1
+21:49:36 BIOCONDA ERROR COMMAND FAILED (exited with 1): /home/ivo/mambaforge/envs/biocondaPy37/bin/conda mambabuild --override-channels --no-anaconda-upload -c conda-forge -c bioconda -c defaults -e /home/ivo/mambaforge/envs/biocondaPy37/conda_build_config.yaml -e /home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/bioconda_utils/bioconda_utils-conda_build_config.yaml recipes/perl-convert-pheno/meta.yaml
 
-21:35:01 BIOCONDA ERROR BUILD FAILED recipes/perl-convert-pheno
-21:35:01 BIOCONDA INFO (COMMAND) conda build purge
-21:35:02 BIOCONDA ERROR BUILD SUMMARY: of 1 recipes, 1 failed and 0 were skipped. Details of recipes and environments follow.
-21:35:02 BIOCONDA ERROR BUILD SUMMARY: FAILED recipe recipes/perl-convert-pheno
+21:49:36 BIOCONDA ERROR BUILD FAILED recipes/perl-convert-pheno
+21:49:36 BIOCONDA INFO (COMMAND) conda build purge
+21:49:37 BIOCONDA ERROR BUILD SUMMARY: of 1 recipes, 1 failed and 0 were skipped. Details of recipes and environments follow.
+21:49:37 BIOCONDA ERROR BUILD SUMMARY: FAILED recipe recipes/perl-convert-pheno
