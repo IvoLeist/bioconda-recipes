@@ -1,27 +1,27 @@
-19:34:42 BIOCONDA INFO Considering total of 1 recipes (perl-convert-pheno).
-19:34:42 BIOCONDA INFO Constraining to 2 git modified recipes (convert-pheno, perl-convert-pheno).
-19:34:42 BIOCONDA INFO Overlap was 1 recipes (perl-convert-pheno).
-19:34:42 BIOCONDA INFO Processing 1 recipes (perl-convert-pheno).
-19:34:42 BIOCONDA INFO Generating DAG
-19:34:42 BIOCONDA INFO 1 recipes to build and test: 
+19:36:14 BIOCONDA INFO Considering total of 1 recipes (perl-convert-pheno).
+19:36:14 BIOCONDA INFO Constraining to 2 git modified recipes (convert-pheno, perl-convert-pheno).
+19:36:14 BIOCONDA INFO Overlap was 1 recipes (perl-convert-pheno).
+19:36:14 BIOCONDA INFO Processing 1 recipes (perl-convert-pheno).
+19:36:14 BIOCONDA INFO Generating DAG
+19:36:15 BIOCONDA INFO 1 recipes to build and test: 
 perl-convert-pheno
-19:34:42 BIOCONDA INFO Determining expected packages for recipes/perl-convert-pheno
-19:34:42 CONDA_BUILD WARNING Setting build platform. This is only useful when pretending to be on another platform, such as for rendering necessary dependencies on a non-native platform. I trust that you know what you're doing.
+19:36:15 BIOCONDA INFO Determining expected packages for recipes/perl-convert-pheno
+19:36:15 CONDA_BUILD WARNING Setting build platform. This is only useful when pretending to be on another platform, such as for rendering necessary dependencies on a non-native platform. I trust that you know what you're doing.
 Updating build index: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
 
-19:34:43 CONDA_BUILD WARNING No numpy version specified in conda_build_config.yaml.  Falling back to default numpy value of 1.16
+19:36:15 CONDA_BUILD WARNING No numpy version specified in conda_build_config.yaml.  Falling back to default numpy value of 1.16
 Adding in variants from internal_defaults
-19:34:43 CONDA_BUILD INFO Adding in variants from internal_defaults
+19:36:15 CONDA_BUILD INFO Adding in variants from internal_defaults
 Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/conda_build_config.yaml
-19:34:43 CONDA_BUILD INFO Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/conda_build_config.yaml
+19:36:15 CONDA_BUILD INFO Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/conda_build_config.yaml
 Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/bioconda_utils/bioconda_utils-conda_build_config.yaml
-19:34:43 CONDA_BUILD INFO Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/bioconda_utils/bioconda_utils-conda_build_config.yaml
+19:36:15 CONDA_BUILD INFO Adding in variants from /home/ivo/mambaforge/envs/biocondaPy37/lib/python3.7/site-packages/bioconda_utils/bioconda_utils-conda_build_config.yaml
 Updating build index: /home/ivo/mambaforge/envs/biocondaPy37/conda-bld
 
 Adding in variants from argument_variants
-19:35:07 CONDA_BUILD INFO Adding in variants from argument_variants
+19:36:38 CONDA_BUILD INFO Adding in variants from argument_variants
 Attempting to finalize metadata for perl-convert-pheno
-19:35:07 CONDA_BUILD INFO Attempting to finalize metadata for perl-convert-pheno
+19:36:38 CONDA_BUILD INFO Attempting to finalize metadata for perl-convert-pheno
 conda-forge/linux-64                                        Using cache
 conda-forge/noarch                                          Using cache
 bioconda/linux-64                                           Using cache

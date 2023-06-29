@@ -26,6 +26,7 @@ HOME=/tmp cpanm YAML::XS
 
 perl Makefile.PL INSTALLDIRS=site
 make
+# make test
 
 # suggestion by chatGPT to debug tests
 # Run tests one by one and capture error logs
@@ -61,7 +62,7 @@ make install
 
 # testing seem to fail (see below)
 # make test
-make install
+# make install
 
 
 # perl Makefile.PL INSTALLDIRS=site \
