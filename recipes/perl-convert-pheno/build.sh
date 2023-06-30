@@ -19,28 +19,12 @@ echo "CONDA_PREFIX: $CONDA_PREFIX"
 export PERL5LIB="$CONDA_PREFIX/lib:$CONDA_PREFIX/lib/perl5:$CONDA_PREFIX/lib/perl5/site_perl:$PERL5LIB"
 echo "PERL5LIB: $PERL5LIB"
 
-# according to ChatGPT-4 the following could help:
-# export PERL_LOCAL_LIB_ROOT="$CONDA_PREFIX/lib/perl5/site_perl"
-#  or a symlink
-# ln -s "$PREFIX/lib/perl5/site_perl" "$CONDA_PREFIX/lib/perl5/5.32/site_perl"
-
 echo "say for @INC"
 perl -E 'say for @INC'
 echo "say for @INC - END"
 
-# the lines above have confirmed the via conda installed perl modules are in the INC path
-# but still when trying to install the perl module Convert::Pheno it fails to find them
-# because it is looking only in the follwing paths:
-# $PREFIX/lib/perl5/5.32/site_perl
-# $PREFIX/lib/perl5/5.32/vendor_perl
-# $PREFIX/lib/perl5/5.32/core_perl
-
-# another finding it looks like that perl is looking for the module
-# in the following paths _test_env but the module is not there but in _h_env
-
 echo "get all perl modules in @INC"
 INC_PATHS=$(perl -e 'print join(" ", @INC)')
-
 for path in $INC_PATHS; do
     # Ensure path exists and is a directory
     if [[ -d "$path" ]]; then
@@ -48,13 +32,6 @@ for path in $INC_PATHS; do
     fi
 done
 echo "get all perl modules in @INC - END"
-
-# the lines above have confirmed the via conda installed perl modules
-# are there but unfortunately not in the paths including the perl version number
-# but e.g. there:
-# $PREFIX/lib/perl5/site_perl/Sort/Naturally.pm
-# and the path above is not used when trying to install the perl module Convert::Pheno
-
 
 # install dependencies not found in conda channels
 install_deps() {
@@ -79,20 +56,6 @@ install_deps() {
     done
 }
 install_deps
-
-# HOME=/tmp cpanm File::ShareDir::ProjectDistDir
-# HOME=/tmp cpanm JSON::Validator
-# HOME=/tmp cpanm Moo
-# HOME=/tmp cpanm Path::Tiny
-# HOME=/tmp cpanm Sort::Naturally
-# HOME=/tmp cpanm Test::Deep
-# HOME=/tmp cpanm Test::Warn
-# HOME=/tmp cpanm Text::CSV_XS
-# HOME=/tmp cpanm Text::Similarity
-# HOME=/tmp cpanm Types::Standard
-# HOME=/tmp cpanm XML::Fast
-# HOME=/tmp cpanm YAML::XS
-
 perl Makefile.PL INSTALLDIRS=site
 make
 # make test

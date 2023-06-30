@@ -21,6 +21,12 @@ conda build perl-convert-pheno
 conda activate biocondaPy37
 bioconda-utils build --docker --mulled-test --git-range master --packages perl-convert-pheno
 
+after the build is done you can install the package with:
+mamba install --use-local perl-convert-pheno
+
+unfortunately errors out with:
+Can't locate Sort/Naturally.pm in @INC (you may need to install the Sort::Naturally module) (@INC contains: /home/ivo/mambaforge/envs/biocondaPy37/bin/../lib /home/ivo/mambaforge/envs/biocondaPy37/lib/perl5/5.32/site_perl /home/ivo/mambaforge/envs/biocondaPy37/lib/perl5/site_perl /home/ivo/mambaforge/envs/biocondaPy37/lib/perl5/5.32/vendor_perl /home/ivo/mambaforge/envs/biocondaPy37/lib/perl5/vendor_perl /home/ivo/mambaforge/envs/biocondaPy37/lib/perl5/5.32/core_perl /home/ivo/mambaforge/envs/biocondaPy37/lib/perl5/core_perl .) at /home/ivo/mambaforge/envs/biocondaPy37/lib/perl5/site_perl/Convert/Pheno/CSV.pm line 9.
+
 Include the CPAN module as a dependency in your Python conda package
 Now you can include perl-convert-pheno as a dependency in your meta.yaml file for your Python conda package.
 
