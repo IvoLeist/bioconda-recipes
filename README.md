@@ -38,7 +38,10 @@ It`s info/index.json looks as follows:
     "perl-json-xs",
     "perl-perlio-gzip",
     "perl-sort-naturally"
-],
+]
+
+When installing all the depencies manually,
+the perl-convert-pheno package works as expected.
 
 Include the CPAN module as a dependency in your Python conda package
 Now you can include perl-convert-pheno as a dependency in your meta.yaml file for your Python conda package.
